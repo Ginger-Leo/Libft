@@ -6,50 +6,35 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:01:33 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/27 11:19:40 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/06 15:10:44 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
+#include "libft.h"
 
-size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-size_t di;
-size_t si;
-size_t srcl;
-size_t dstl;
+	size_t	di;
+	size_t	si;
+	size_t	srcl;
+	size_t	dstl;
 
-srcl = 0;
-dstl = 0;
-
-
-while (src[srcl] != '\0')
-	srcl++;
-
-while (dst[dstl] != '\0')
-	dstl++;
-
-if (dstsize > dstl)
-	return (error);
-
-if (dstsize == 0)
-	return (srcl);
-else
-{
+	srcl = ft_strlen((char *) src);
+	dstl = ft_strlen(dst);
+	if (dstsize < dstl || dstsize == 0)
+		return (srcl + dstsize);
 	di = dstl;
 	si = 0;
- 	while ((di < dstsize - 1) && (src[si] != '\0'))
+	while ((di < dstsize - 1) && (src[si] != '\0'))
 	{
 		dst[di] = src[si];
 		di++;
 		si++;
 	}
-	dst[di]  = '\0';
-	return(dstl + srcl);
+	dst[di] = '\0';
+	return (dstl + srcl);
 }
-}
+/*
 int main(void)
 {
 char d1[5] = "1234";
@@ -74,4 +59,4 @@ printf("%s\n", d1);
 	  
 return (0);
 
-}
+}*/

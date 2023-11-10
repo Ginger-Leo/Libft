@@ -1,38 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/09 14:10:53 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/10 10:06:37 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int	i;
+	unsigned char	*str;
+	unsigned char	p;
+	size_t			i;
 
+	str = (unsigned char *)s;
+	p = (unsigned char)c;
 	i = 0;
-	while (s[i] != '\0')
+	if (p == '\0')
+		return (NULL);
+	while (str[i] && i < n)
 	{
-		write(fd, &s[i], 1);
-		i++;
+		if (str[i] == p)
+			return (str + i);
+		else
+			i++;
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
+	if (p == '\0')
+		return (str + i);
+	return (NULL);
 }
 /*
-int main()
+int	main(void)
 {
-char str[24] = "well hello there world!";
-
-ft_putendl_fd(str, 1);  
-
+	printf("%s\n", ft_memchr("hello", 'e', 5));
 }
 */

@@ -6,12 +6,13 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 12:05:21 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/25 12:37:31 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/06 10:38:15 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <ctype.h>
+#include "libft.h"
 
 int	ft_tolower(char c)
 {

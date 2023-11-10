@@ -1,38 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/08 10:49:08 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/09 09:53:01 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
+int	ft_atoi(const char *str)
 {
-	int	i;
+	long	rtn;
+	int		neg;
+	int		i;
 
+	rtn = 0;
+	neg = 1;
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '-')
 	{
-		write(fd, &s[i], 1);
+		neg = -1;
 		i++;
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
+	else if (str[i] == '+')
+		i++;
+	while (str[i] != '\0' && (str[i] > 47 && str[i] < 58))
+	{
+		rtn = (rtn * 10) + (str[i] - 48);
+		i++;
+	}
+	return (rtn * neg);
 }
 /*
 int main()
 {
-char str[24] = "well hello there world!";
-
-ft_putendl_fd(str, 1);  
-
+int i; 
+char str[] = "-+54d4";
+i = ft_atoi(str);
+ printf("%d\n",i);
 }
 */

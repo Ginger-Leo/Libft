@@ -1,38 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/07 11:45:53 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/07 13:49:28 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int	i;
+	char		*d;
+	const char	*s;
+	size_t		i;
 
+	s = (const char *)src;
+	d = (char *)dst;
 	i = 0;
-	while (s[i] != '\0')
+	while (i < n)
 	{
-		write(fd, &s[i], 1);
+		if (d == '\0' || s == '\0')
+			return (0);
+		d[i] = s[i];
 		i++;
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
+	return (dst);
 }
 /*
 int main()
 {
-char str[24] = "well hello there world!";
+char src1[] = "source";
+char dst1[] = "";
+//char src2[] = "source";
+//char dst2[] = "";
 
-ft_putendl_fd(str, 1);  
+ft_memcpy(dst1, src1, 5);
+//memcpy(dst2, src2, 5);
 
+printf("%s\n", src1);
+printf("%s\n", dst1);
+//printf("%s\n", src2);
+//printf("%s\n", dst2);
 }
 */

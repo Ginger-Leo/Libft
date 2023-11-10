@@ -1,38 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/10 10:11:56 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/10 10:54:20 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int	i;
+	unsigned char	*c1;
+	unsigned char	*c2;
+	size_t			i;
 
+	c1 = (unsigned char *) s1;
+	c2 = (unsigned char *) s2;
 	i = 0;
-	while (s[i] != '\0')
+	while ((c1[i] != '\0' || c2[i] != '\0') && i < n)
 	{
-		write(fd, &s[i], 1);
+		if (c1[i] != c2[i])
+			return (c1[i] - c2[i]);
 		i++;
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
+	return (0);
 }
 /*
+
 int main()
 {
-char str[24] = "well hello there world!";
 
-ft_putendl_fd(str, 1);  
+printf("%d\n", ft_memcmp("test", "tEst", 4));
 
 }
 */

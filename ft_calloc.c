@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/10 14:33:46 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/10 16:11:34 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
+void	*ft_calloc(size_t count, size_t size)
 	{
-		write(fd, &s[i], 1);
+	void	*ptr;
+	int		i;
+
+	ptr = malloc(count * size);
+	i = 0;
+
+	while (ptr)
+	{
 		i++;
+		}
+			return (ptr);
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
-}
-/*
-int main()
+
+int	main()
 {
-char str[24] = "well hello there world!";
 
-ft_putendl_fd(str, 1);  
+printf("%lu\n",ft_calloc(1, 4));
+
+return (0);
 
 }
-*/

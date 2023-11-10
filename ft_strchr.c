@@ -1,38 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/01 10:37:27 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/09 10:35:58 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
+char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	int		i;
+	char	ch;
 
+	ch = (char)c;
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		write(fd, &s[i], 1);
-		i++;
+		if (s[i] == ch)
+			return ((char *)s + i);
+		else
+			i++;
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
+	if (ch == '\0')
+		return ((char *)s + i);
+	return (0);
 }
 /*
 int main()
 {
-char str[24] = "well hello there world!";
+char str1[] = "hello warld!";
+//printf("%s\n", str1);
+printf("actual:%s", strchr(str1, 'o'));
+printf("\n");
 
-ft_putendl_fd(str, 1);  
-
+char str2[] = "hello warld!";
+ft_strchr(str2, 'o');
+printf("mine:%s", ft_strchr(str2, 'o'));
+printf("\n");
 }
 */

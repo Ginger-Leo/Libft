@@ -1,38 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:03:23 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:58:36 by lstorey          ###   ########.fr       */
+/*   Created: 2023/11/10 11:35:49 by lstorey           #+#    #+#             */
+/*   Updated: 2023/11/10 14:28:57 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
-void	ft_putendl_fd(char*s, int fd)
+char	*ft_strdup(const char *s1)
 {
-	int	i;
+	size_t		strl;
+	size_t		i;
+	char		*scpy;
 
 	i = 0;
-	while (s[i] != '\0')
+	strl = ft_strlen(s1);
+	scpy = (char *)malloc(sizeof (char) * (strl + 1));
+	if (scpy == NULL)
+		return (0);
+	while (i < strl)
 	{
-		write(fd, &s[i], 1);
+		scpy[i] = s1[i];
 		i++;
 	}
-	if (s[i] == '\0')
-		write(fd, "\n", 1);
+	scpy[i] = '\0';
+	return (scpy);
 }
 /*
-int main()
+int	main(void)
 {
-char str[24] = "well hello there world!";
-
-ft_putendl_fd(str, 1);  
-
+printf("%s\n",ft_strdup("hello"));
 }
 */

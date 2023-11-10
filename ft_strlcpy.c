@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 11:02:06 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/26 14:58:32 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/09 10:02:50 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,29 @@
 #include <stdio.h>
 #include <unistd.h>
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
-	i = 0;
-	size_t len;
-	len = 0;
+	size_t	i;	
+	size_t	len;
 
+	len = 0;
+	i = 0;
 	while (src[len] != '\0')
 		len++;
-     if (dstsize == 0)
-	 	return (len);
-	 else
-	 {
+	if (dstsize == 0)
+		return (len);
+	else
+	{
 		while ((i < dstsize - 1) && (src[i] != '\0'))
 		{
 			dst[i] = src[i];
 			i++;
 		}
 		dst[i] = '\0';
-	return (len);
+		return (len);
 	}
 }
-
+/*
 int main(void)
 {
 	char d1[] = "hello world";
@@ -50,3 +50,4 @@ int main(void)
 //	printf("ours: %lu\n", test);
 	printf("%s\n", d1);
 }
+*/

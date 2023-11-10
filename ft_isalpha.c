@@ -6,13 +6,14 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 10:20:14 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/24 12:11:06 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/06 10:46:01 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+/*#include <ctype.h>
 #include <unistd.h>
-#include <stdio.h>
+#include <stdio.h>*/
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

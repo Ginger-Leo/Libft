@@ -6,13 +6,14 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 11:57:24 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/24 11:58:42 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/06 10:48:31 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+/*#include <ctype.h>
 #include <unistd.h>
-#include <stdio.h>
+#include <stdio.h>*/
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -21,7 +22,7 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -34,3 +35,4 @@ int	main(void)
 	printf("my function = '%d', actual function = '%d'", mine, actual);
 	return (0);
 }
+*/

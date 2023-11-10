@@ -6,13 +6,14 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 11:25:52 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/24 12:15:30 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/06 10:45:01 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+/*#include <ctype.h>
 #include <unistd.h>
-#include <stdio.h>
+#include <stdio.h>*/
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
