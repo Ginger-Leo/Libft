@@ -6,7 +6,7 @@
 #    By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/31 14:24:05 by lstorey           #+#    #+#              #
-#    Updated: 2023/11/10 14:05:11 by lstorey          ###   ########.fr        #
+#    Updated: 2023/11/13 14:41:35 by lstorey          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,11 @@ SRC 		=	ft_isalnum.c \
 				ft_strdup.c \
 				ft_tolower.c \
 				ft_memcmp.c \
-				*ft_memchr.c \
+				ft_memchr.c \
+				ft_calloc.c \
+				ft_strjoin.c \
+				ft_substr.c \
+				ft_strtrim.c \
 				ft_toupper.c 
 
 OBJ = $(SRC:.c=.o)
