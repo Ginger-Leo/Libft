@@ -6,7 +6,7 @@
 #    By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/31 14:24:05 by lstorey           #+#    #+#              #
-#    Updated: 2023/11/13 14:41:35 by lstorey          ###   ########.fr        #
+#    Updated: 2023/11/14 14:42:28 by lstorey          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ SRC 		=	ft_isalnum.c \
 				ft_calloc.c \
 				ft_strjoin.c \
 				ft_substr.c \
+				ft_strmapi.c \
 				ft_strtrim.c \
 				ft_toupper.c 
 
