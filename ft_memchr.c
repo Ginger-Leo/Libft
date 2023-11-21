@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:10:53 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/10 10:06:37 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:19:57 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		return (str + i);
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	printf("%s\n", ft_memchr("hello", 'e', 5));
-}
-*/

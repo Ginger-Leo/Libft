@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 11:45:45 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/13 14:30:52 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:46:00 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	nstr[i] = '\0';
 	return (nstr);
 }
-/*
-int main ()
-{
-	char *s;
-	s = "lorem ipsum dolor sit amet";
-
-	printf("%s\n", ft_substr(s, 400, 20));
-
-	return(0);
-}
-*/

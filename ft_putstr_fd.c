@@ -6,12 +6,10 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 15:40:36 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:56:12 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:22:05 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <unistd.h>*/
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
@@ -25,15 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-/*
-int main()
-{
-
-char str[13] = "wagawn blud!";
-
-ft_putstr_fd(str, 1);
-
-return(0);
-
-}
-*/

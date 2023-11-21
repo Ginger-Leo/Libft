@@ -6,12 +6,11 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 09:55:32 by lstorey           #+#    #+#             */
-/*   Updated: 2023/10/25 12:31:35 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:44:18 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <ctype.h>
+#include "libft.h"
 
 int	ft_toupper(char c)
 {
@@ -21,21 +20,3 @@ int	ft_toupper(char c)
 		c = c - 32;
 	return (c);
 }
-/*
-int main(void)
-{
-char c;
-c = 'a';
-
-printf("My function: %c\n", ft_toupper(c));
-printf("Actual function: %c\n", toupper(c));
-
-c = 'A';
-
-printf("My function: %c\n", ft_toupper(c));
-printf("Actual function: %c\n", toupper(c));
-
-
-return(0);
-
-}*/

@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 14:36:59 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/14 14:11:04 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:46:31 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(nstr, &s1[start], end - start +2);
 	return (nstr);
 }
-/*
-int	main()
-{
-	printf("%s\n", ft_strtrim("aaaaaaaa", "a"));
-
-	return (0);
-}
-*/

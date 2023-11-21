@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 10:49:08 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/09 09:53:01 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:06:12 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (rtn * neg);
 }
-/*
-int main()
-{
-int i; 
-char str[] = "-+54d4";
-i = ft_atoi(str);
- printf("%d\n",i);
-}
-*/

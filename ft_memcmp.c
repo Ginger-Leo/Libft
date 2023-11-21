@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 10:11:56 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/10 10:54:20 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:33:34 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-
-int main()
-{
-
-printf("%d\n", ft_memcmp("test", "tEst", 4));
-
-}
-*/

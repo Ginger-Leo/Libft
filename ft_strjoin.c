@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 10:25:27 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/13 11:22:03 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:40:36 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	nstr[i] = '\0';
 	return (nstr);
 }
-/*
-int main ()
-{
-    printf("%s\n", ft_strjoin("hello ", "leo"));
-    
-    return(0);
-}
-*/

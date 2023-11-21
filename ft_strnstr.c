@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:31:59 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/10 14:31:35 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:49:20 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,19 +62,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char	pin;
-	char	hay;
-
-	hay[27] = "lorem ipsum dolor sit amet";
-	pin[6] = "dolor";
-
-	printf("mine:%s\n", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15));
-
-	printf("actual: %s\n", strnstr("lorem ipsum dolor sit amet", "dolor", 15));
-
-	return (0);
-
-}*/

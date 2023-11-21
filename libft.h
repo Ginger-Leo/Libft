@@ -6,26 +6,23 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 11:13:07 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/14 14:42:38 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:01:26 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H 
-#define LIBFT_H
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
-#include <ctype.h>
-#include <xlocale.h>
-
-
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <stdlib.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <string.h>
 
 void		ft_bzero(void *s, size_t n);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_atoi(const char *str);
 void		*ft_calloc(size_t count, size_t size);
+char		**ft_split(char const *s, char c);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
 int			ft_isascii(int c);
@@ -50,9 +47,9 @@ int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		*ft_strrchr(const char *s, int c);
+char		*ft_itoa(int n);
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 int			ft_tolower(char c);
 int			ft_toupper(char c);
-
 
 #endif

@@ -6,13 +6,11 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 11:02:06 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/09 10:02:50 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:42:07 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -36,18 +34,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		return (len);
 	}
 }
-/*
-int main(void)
-{
-	char d1[] = "hello world";
-	char s1[] = "get off me joe";
-//	size_t test;
-
-	printf("%s\n", d1);
-//	test = ft_strlcpy(d1, s1, 0);
-//	printf("%zu\n", test);
-	printf("actual: %zu\n", strlcpy(d1, s1, 0));
-//	printf("ours: %lu\n", test);
-	printf("%s\n", d1);
-}
-*/

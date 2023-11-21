@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 14:33:46 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/13 10:13:21 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:07:51 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, count * size);
 	return (ptr);
 }
-/*
-int	main()
-{
-	ft_calloc(1, 4);
-	return (0);
-
-}
-*/

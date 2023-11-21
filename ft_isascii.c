@@ -6,13 +6,10 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 15:53:56 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 11:35:41 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:11:06 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <ctype.h>
-#include <unistd.h>
-#include <stdio.h>*/
 #include "libft.h"
 
 int	ft_isascii(int c)
@@ -22,34 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
-int main(void)
-{
-	char c;
-	int mine;
-	int actual;
-	
-	c = -1;
-	mine = ft_isascii(c);
-	actual = isascii(c);
-	printf("my function = '%d', actual function = '%d'\n", mine, actual);
-
-	c = 'G';
-	mine = ft_isascii(c);
-	actual = isascii(c);
-	printf("my function = '%d', actual function = '%d'\n", mine, actual);
-
-	c = '!';
-	mine = ft_isascii(c);
-	actual = isascii(c);
-	printf("my function = '%d', actual function = '%d'\n", mine, actual);
-
-	c = '5';
-	mine = ft_isascii(c);
-	actual = isascii(c);
-	printf("my function = '%d', actual function = '%d'\n", mine, actual);
-
-
-
-	return (0);
-}*/

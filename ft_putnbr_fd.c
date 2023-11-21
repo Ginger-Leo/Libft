@@ -6,12 +6,10 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:59:57 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/06 13:44:34 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:25:36 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <unistd.h>
-#include <stdio.h>*/
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
@@ -41,18 +39,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + 48, fd);
 	}
 }
-/*	
-int main()
-{
-
-ft_putnbr_fd(0,1);
-printf("\n");
-ft_putnbr_fd(-5,1);
-printf("\n");
-ft_putnbr_fd(-57,1);
-printf("\n");
-ft_putnbr_fd(-98744,1);
-printf("\n");
-
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: lstorey <lstorey@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 11:35:49 by lstorey           #+#    #+#             */
-/*   Updated: 2023/11/10 14:28:57 by lstorey          ###   ########.fr       */
+/*   Updated: 2023/11/21 14:37:57 by lstorey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ char	*ft_strdup(const char *s1)
 	scpy[i] = '\0';
 	return (scpy);
 }
-/*
-int	main(void)
-{
-printf("%s\n",ft_strdup("hello"));
-}
-*/
